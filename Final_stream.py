@@ -1,11 +1,9 @@
-
-
 import streamlit as st
 import pandas as pd
 import pickle
 
 # Load the trained model
-with open('rf_model.pkl', 'rb') as file:
+with open('best_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Define the unique values for 'cut', 'color', and 'clarity'
